@@ -9,7 +9,7 @@ This repo is to be used for all code related to the Fixit project for CS184. The
 Instructions
 ------------
 
-When working on the project, make sure to add any new files as folders describing what it's for. The top level is currently for the django server so that it runs properly on Heroku. There is a ParseCloud folder containing the code files for custom code uploaded to Parse. iOS app files are located in the Xcode folder, and front-end web is under HTML.
+When working on the project, make sure to add any new files as folders describing what it's for. More documentation pending,
 
 Git
 ---
