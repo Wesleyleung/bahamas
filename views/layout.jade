@@ -1,25 +1,24 @@
 !!! 5
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    header
-      nav
-        ul
-          li 
-            a(href="/") Home
-          li 
-            a(href="/about") About
-          li 
-            a(href="/contact") Contact
-    section#wrapper!= body
-        footer 
-          section.css-table
-            section.three-row
-              section.cell
-                p Footer stuff 
-              section.cell
-                p Footer stuff 
-              section.cell
-                p Footer stuff <br />felis eu leo aliquet<br /> ac rutrum odio aliquet
+	head
+		meta(charset='utf-8')
+		title= title
+
+		// Set initial view port load and disables zooming,
+		-// remember the comma between attributes!
+		meta(name='viewport', content="initial-scale=1, maximum-scale=1, user-scalable=no")
+
+		- // Even though we edit the .style file, use the .css file in the jade template
+		//link(rel='stylesheet', href='/stylesheets/style.css')
+
+		// Include Ratchet CSS and JS
+		link(rel='stylesheet', href='/ratchet/ratchet.css')
+		script(type='script/javascript', href='/ratchet/ratchet.js')
+
+	body
+		include header
+
+		section#wrapper
+			block content
+
+		include footer
