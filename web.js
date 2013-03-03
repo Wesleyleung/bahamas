@@ -11,7 +11,7 @@ var app = express();
 
 // Configuration
 
-app.configure(function(){
+app.configure(function() {
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -23,11 +23,11 @@ app.configure(function(){
   app.use(express.static(path.join(__dirname, '/public')));
 });
 
-app.configure('development', function(){
+app.configure('development', function() {
   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
 
-app.configure('production', function(){
+app.configure('production', function() {
   app.use(express.errorHandler());
 });
 
@@ -37,6 +37,6 @@ app.get('/', routes.index);
 app.get('/about', routes.about);
 app.get('/contact', routes.contact);
 
-app.listen(app.get('port'), function(){
+app.listen(app.get('port'), function() {
   console.log("Express server listening on port %d in %s mode", app.get('port'), app.settings.env);
 });
