@@ -6,14 +6,32 @@ html
 
 		// Set initial view port load and disables zooming,
 		-// remember the comma between attributes!
-		meta(name='viewport', content="initial-scale=1, maximum-scale=1, user-scalable=no")
+		meta(name='viewport', content='initial-scale=1, maximum-scale=1, user-scalable=no')
+		
+		// Makes app chrome-less when bookmarked to the phone homescreen
+		meta(name='apple-mobile-web-app-capable', content='yes')
+		meta(name='apple-mobile-web-app=status-bar-style', content='black')
+
+		// Set Apple icons for when prototype is saved to home screen 
+		link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/ratchet/touch-icons/apple-touch-icon-114x114.png')
+		link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/ratchet/touch-icons/apple-touch-icon-72x72.png')
+		link(rel='apple-touch-icon-precomposed', sizes='57x57', href='/ratchet/touch-icons/apple-touch-icon-57x57.png')
+
+		// Include the compiled Ratchet CSS
+		link(rel='stylesheet', href='/ratchet/ratchet.css')
+
+		// Include the compiled Ratchet JS
+		script(src='/ratchet/ratchet.js')
+
+		// Intro paragraph styles. Delete once you start using this page 
+		style(type='text/css')
+			.welcome {
+				line-height: 1.5;
+				color: #555;
+			}
 
 		- // Even though we edit the .style file, use the .css file in the jade template
 		//link(rel='stylesheet', href='/stylesheets/style.css')
-
-		// Include Ratchet CSS and JS
-		link(rel='stylesheet', href='/ratchet/ratchet.css')
-		script(type='script/javascript', href='/ratchet/ratchet.js')
 
 	body
 		include header
