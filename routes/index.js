@@ -2,11 +2,9 @@
 /*
  * GET home page.
  */
-
 exports.index = function(req, res) {
-  res.render('index', { title: 'Home' })
+  res.render('index', { title: 'Stanford Fixit' })
 };
-
 
 /*
  * GET about page 
