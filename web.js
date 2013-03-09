@@ -18,7 +18,11 @@ app.configure(function() {
   app.set('view engine', 'jade');
   app.use(express.bodyParser());
   app.use(express.methodOverride());
-  app.use(require('stylus').middleware({ src: __dirname + '/public' }));
+  app.use(require('stylus').middleware({
+      src: __dirname + '/assets' //.styl files are located in '/assets/stylesheets',
+    , dest: __dirname + '/public'//.css files compiles
+    , compress: true
+    }));
   app.use(app.router);
   //Note: the path '/public/stylesheets/style.css' should be '/stylesheets/style.css' with this line
   app.use(express.static(path.join(__dirname, '/public')));
