@@ -1,2 +1,2 @@
 #photo-input{position:relative;color:#f00}
-#photo-button{position:absolute}
+#photo-button{position:absolute;z-index:2}
