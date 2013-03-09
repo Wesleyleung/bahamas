@@ -3,7 +3,7 @@
  * GET home page.
  */
 exports.index = function(req, res) {
-  res.render('index', { title: 'Stanford Fixit' })
+  res.render('index.html', { title: 'Stanford Fixit' })
 };
 
 /*
