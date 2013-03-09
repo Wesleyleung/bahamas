@@ -4,8 +4,8 @@
  */
 
 var express = require('express')
-  , routes	= require('./routes')
-	, path		= require('path');
+  , routes  = require('./routes')
+  , path    = require('path');
 
 var app = express();
 
@@ -20,7 +20,7 @@ app.configure(function() {
   app.use(express.methodOverride());
   app.use(require('stylus').middleware({ src: __dirname + '/public' }));
   app.use(app.router);
-	//Note: the path '/public/stylesheets/style.css' should be '/stylesheets/style.css' with this line
+  //Note: the path '/public/stylesheets/style.css' should be '/stylesheets/style.css' with this line
   app.use(express.static(path.join(__dirname, '/public')));
 });
 

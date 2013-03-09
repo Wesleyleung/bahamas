@@ -1,14 +1,14 @@
 //Top bar
 header.bar-title
-	//Left button
-	- if (title !== 'Stanford Fixit')
-		a.button-prev(href=left_link)= left_title
-	- else
-		a.button(href=left_link)= left_title
+  //Left button
+  - if (title !== 'Stanford Fixit')
+    a.button-prev(href=left_link)= left_title
+  - else
+    a.button(href=left_link)= left_title
 
-	//Linked title
-	h1.title
-		a(href=title_link)= title
+  //Linked title
+  h1.title
+    a(href=title_link)= title
 
-	//Right button
-	a.button(href=right_link)= right_title
+  //Right button
+  a.button(href=right_link)= right_title
