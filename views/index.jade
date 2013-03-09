@@ -10,11 +10,12 @@ block main
     p Please enter your fixit request below
 
   form(method="post", action="/request")
-    label(for="photo")Take a picture to help us solve the problem!
+    label(for="photo")
+      | Take a picture to help us solve the problem!
     #photo-box
       input#photo-input(type="file", name="photo", hidden="true")
       .block-button#photo-button
-        Click to take a Picture
+        | Click to take a Picture
 
     input(type="text", placeholder="Location")
     textarea(rows="5", placeholder="Descripition")
