@@ -1,13 +1,14 @@
 //Top bar
 header.bar-title
 	//Left button
-	a.button(href="/about") About
+	- if (title !== 'Home')
+		a.prev-button(href=left_link)= left_title
+	- else
+		a.button(href=lef_link)= left_title
 
 	//Linked title
 	h1.title
-		a(href="/")= title
+		a(href=title_link)= title
 
 	//Right button
-	a.button(href="/contact") Contact
-
-a.button(href="/contact") Contact
+	a.button(href=right_link)= right_title
