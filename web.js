@@ -14,8 +14,8 @@ var app = express();
 app.configure(function() {
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
-  app.engine('html', require('ejs').renderFile);
-  //app.set('view engine', 'jade');
+  //app.engine('html', require('ejs').renderFile);
+  app.set('view engine', 'jade');
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(require('stylus').middleware({ src: __dirname + '/public' }));
