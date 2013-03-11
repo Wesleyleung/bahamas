@@ -13,7 +13,7 @@ block main
             img(src="/img/camera_add.png")
             "tap to upload a picture"
 
-        input#upload_input(type="file", style="visibility:hidden")
+        input#upload_input(type="file", style="visibility:hidden", accept="image/*")
 
         //
             form(method="post", action="/request")
