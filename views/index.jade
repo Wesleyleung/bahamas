@@ -10,10 +10,10 @@ block main
         p Please enter your fixit request below
 
         div#upload_div(style="width:500px;height:100px;background-color:#C0C0C0;cursor:pointer", onclick="divClickFunction()")
-            img(src="/img/camera_add.png")
+            img#pic(src="/img/camera_add.png")
             "tap to upload a picture"
 
-        input#upload_input(type="file", style="visibility:hidden", accept="image/*")
+        input#upload_input(type="file", style="visibility:hidden", accept="image/*", onchange="showPreview(this)")
 
         //
             form(method="post", action="/request")
