@@ -1,8 +1,27 @@
 extends layout
 
-block content
-	p Welcome to #{title}
-	p We can define routes and add API endpoints here
-	p Stanford auth should be presented, but since we likely won't have access to that, let's just use gmail or FB ouath
-	p We do not need a sign in (I asked huang)
-	p Camera functionality should be on homepage
+block head
+    link(rel='stylesheet', href='/stylesheets/index.css')
+    script(src='js/index.js')
+
+
+block main
+
+    .content-padded
+        img#pic(src="/img/tap.png", onclick="picClickFunction()")
+        input#upload_input(type="file", style="visibility:hidden", accept="image/*", onchange="showPreview(this)")
+
+        //
+            form(method="post", action="/request")
+                label(for="photo")
+                    | Take a picture to help us solve the problem!
+                #photo-box
+                    input#photo-input(type="file", name="photo", hidden="true")
+                    .block-button#photo-button
+                        | Click to take a Picture
+            br
+            input(type="file", name="photo")
+
+        input#building(type="text", placeholder="Building")
+        input#additional(type="text", placeholder="Floor, room number, etc.")
+        textarea(rows="5", placeholder="Descripition")
