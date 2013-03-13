@@ -1,4 +1,4 @@
-function divClickFunction() {
+function picClickFunction() {
 	$('#upload_input').click();
 }
 
@@ -15,8 +15,7 @@ function showPreview(input) {
 		function success(position) {
 			var lat = position.coords.latitude;
 			var lng = position.coords.longitude;
-			$('#location')[0].value = lat;
-			console.log(lat);
+			$('#building').attr('value', lat);
 			//document.getElementById('photo_lng').value = lng;
 		}
 

@@ -2,17 +2,13 @@ extends layout
 
 block head
     link(rel='stylesheet', href='/stylesheets/index_style.css')
+    link(rel='stylesheet', href='/css/index.css')
 
 
 block main
 
     .content-padded
-        p Please enter your fixit request below
-
-        div#upload_div(style="width:500px;height:100px;background-color:#C0C0C0;cursor:pointer", onclick="divClickFunction()")
-            img#pic(src="/img/camera_add.png")
-            "tap to upload a picture"
-
+        img#pic(src="/img/tap.png", onclick="picClickFunction()")
         input#upload_input(type="file", style="visibility:hidden", accept="image/*", onchange="showPreview(this)")
 
         //
@@ -26,5 +22,6 @@ block main
             br
             input(type="file", name="photo")
 
-        input#location(type="text", placeholder="Location")
+        input#building(type="text", placeholder="Building")
+        input#additional(type="text", placeholder="Floor, room number, etc.")
         textarea(rows="5", placeholder="Descripition")
