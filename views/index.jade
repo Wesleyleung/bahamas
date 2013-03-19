@@ -8,20 +8,12 @@ block head
 block main
 
     .content-padded
-        img#pic(src="/img/tap.png", onclick="picClickFunction()")
-        input#upload_input(type="file", style="visibility:hidden", accept="image/*", onchange="showPreview(this)")
+        form(method="post", action="/email")
+            img#pic(src="/img/tap.png", onclick="picClickFunction()")
+            input#upload_input(type="file", style="visibility:hidden", accept="image/*", onchange="showPreview(this)")
 
-        //
-            form(method="post", action="/request")
-                label(for="photo")
-                    | Take a picture to help us solve the problem!
-                #photo-box
-                    input#photo-input(type="file", name="photo", hidden="true")
-                    .block-button#photo-button
-                        | Click to take a Picture
-            br
-            input(type="file", name="photo")
 
-        input#building(type="text", placeholder="Building")
-        input#additional(type="text", placeholder="Floor, room number, etc.")
-        textarea(rows="5", placeholder="Descripition")
+            input#building(type="text", placeholder="Building")
+            input#additional(type="text", placeholder="Floor, room number, etc.")
+            textarea#description(rows="5", placeholder="Descripition")
+            input(type="submit", value="Submit")

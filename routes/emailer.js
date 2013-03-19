@@ -21,7 +21,7 @@ exports.email = function(req, res) {
 
 	var sendgrid = new SendGrid(user, key);
 	sendgrid.send({
-  		to: 'wes.k.leung@gmail.com',
+  		to: 'stanfordfixit@gmail.com',
   		from: bahamasfixit_email_address,
   		subject: 'Hello World',
   		text: 'Sending email with NodeJS through SendGrid!'
@@ -35,4 +35,6 @@ exports.email = function(req, res) {
 	res.render('success', { title: 'Success', title_link: '/success',
                           left_title: 'Home', left_link: "/"})
 }
+
+
 
