@@ -6,19 +6,19 @@ html
 
     // Set initial view port load and disables zooming,
     -// remember the comma between attributes!
-    meta(name='viewport', content='initial-scale=1, maximum-scale=1, user-scalable=no')
+    meta(name='viewport', width='device-width', content='initial-scale=1, maximum-scale=1, user-scalable=no')
 
     // Makes app chrome-less when bookmarked to the phone homescreen
     meta(name='apple-mobile-web-app-capable', content='yes')
     meta(name='apple-mobile-web-app=status-bar-style', content='black')
 
-    // Set Apple icons for when prototype is saved to home screen 
+    // Set Apple icons for when prototype is saved to home screen
     link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/ratchet/touch-icons/apple-touch-icon-114x114.png')
     link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/ratchet/touch-icons/apple-touch-icon-72x72.png')
     link(rel='apple-touch-icon-precomposed', sizes='57x57', href='/ratchet/touch-icons/apple-touch-icon-57x57.png')
 
     // Include the compiled Ratchet CSS
-    link(rel='stylesheet', href='/ratchet/ratchet.css')
+    link(rel='stylesheet', media='screen and (min-width: 320px) and (max-width : 720px)', href='/ratchet/ratchet.css')
 
     // Include the compiled Ratchet JS
     <script language="JavaScript" type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
