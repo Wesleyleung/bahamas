@@ -8,7 +8,7 @@ block head
 block main
 
     .content-padded
-        form(method="post", action="/email", enctype="multipart/form-data", id="fixitform")
+        form(method="post", action="/email", enctype="multipart/form-data", id="fixitform", onsubmit="return validateForm()")
             img#pic(src="/img/tap.png", onclick="picClickFunction()", name="pic")
             
             input#upload_input(type="file", style="visibility:hidden", accept="image/*", onchange="showPreview(this)", name="uploaded_input")

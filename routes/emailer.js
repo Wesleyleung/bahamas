@@ -7,8 +7,7 @@ var bahamasfixit_email_address = "stanfordfixit@gmail.com";
 exports.email = function(req, res) {
 	var user;
 	var key;
-	console.log("HEROKU LIVE");
-	console.log(process.env.SENDGRID_USERNAME);
+
 	if(!process.env.SENDGRID_USERNAME) {
 		user = "app12301695@heroku.com";
 	} else {
