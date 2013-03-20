@@ -19,6 +19,19 @@ app.configure(function() {
   app.set('view engine', 'jade');
   app.use(express.bodyParser());
   app.use(express.methodOverride());
+
+  // Add mobile middleware to set a response local var that lets us check 
+  // the user agent in views and load scripts appropriately
+  app.use(function(req, res, next) {
+    var ua = req.get('User-Agent');
+    if(/mobile/i.test(ua)) {
+      res.locals.is_mobile = true;
+    } else {
+      res.locals.is_mobile = false;
+    }
+    next();
+  });
+
   app.use(require('stylus').middleware({
       src: __dirname + '/assets' //.styl files are located in '/assets/stylesheets',
     , dest: __dirname + '/public'//.css files compiles
@@ -44,6 +57,7 @@ app.get('/about', routes.about);
 app.get('/contact', routes.contact);
 app.get('/information', routes.information);
 app.get('/success', routes.success);
+app.get('/failure', routes.failure);
 app.post('/email', emailer.email);
 
 app.listen(app.get('port'), function() {

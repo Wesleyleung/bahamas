@@ -7,7 +7,8 @@ var bahamasfixit_email_address = "stanfordfixit@gmail.com";
 exports.email = function(req, res) {
 	var user;
 	var key;
-	
+	console.log("HEROKU LIVE");
+	console.log(process.env.SENDGRID_USERNAME);
 	if(!process.env.SENDGRID_USERNAME) {
 		user = "app12301695@heroku.com";
 	} else {
@@ -36,7 +37,9 @@ exports.email = function(req, res) {
 			console.log(message);
 		} 
 		console.log(success);
+		res.render('success', { title: 'Success', title_link: '/success',
+                          left_title: 'Home', left_link: "/"})
 	});
-	res.render('success', { title: 'Success', title_link: '/success',
+	res.render('failure', { title: 'Failure', title_link: '/failure',
                           left_title: 'Home', left_link: "/"})
 }

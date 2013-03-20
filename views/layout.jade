@@ -21,8 +21,13 @@ html
     link(rel='stylesheet', href='/ratchet/ratchet.css')
 
     // Include the compiled Ratchet JS
-    <script language="JavaScript" type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
-    script(src='/ratchet/ratchet.js')
+    script(src='/js/jquery-1.9.1.min.js')
+
+    - // Conditionally load the push.js or non push.js ratchet depending on the browser
+    if is_mobile
+      script(src='/ratchet/ratchet.js')
+    else
+      script(src='/ratchet/ratchet-no-push.js')
 
     // Intro paragraph styles. Delete once you start using this page
     style(type='text/css')
