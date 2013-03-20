@@ -4,8 +4,7 @@
  */
 exports.index = function(req, res) {
   res.render('index', { title: 'Stanford Fixit',  title_link: '/',
-                        left_title: 'Info',      left_link: '/information',
-                        right_title: 'Submit',    right_link: '/success'})
+                        left_title: 'Info',      left_link: '/information'})
 };
 
 exports.information = function(req, res) {
@@ -17,6 +16,12 @@ exports.success = function(req, res) {
   res.render('success', { title: 'Success', title_link: '/success',
                           left_title: 'Home', left_link: "/"})
 };
+
+exports.failure = function(req, res) {
+  res.render('failure', { title: 'Failure', title_link: '/failure',
+                          left_title: 'Home', left_link: "/"})
+};
+
 
 /*
  * GET about page 
