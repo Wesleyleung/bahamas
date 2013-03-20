@@ -7,6 +7,7 @@ function showPreview(input) {
 	    var reader = new FileReader();
 		reader.onload = function(e) {
 			$('#pic').attr('src', e.target.result);
+
 			//document.getElementById('hiddenPreview').style.display="block";
 			//document.getElementById('hidden').style.display="none";
 		}
