@@ -44,6 +44,7 @@ app.get('/about', routes.about);
 app.get('/contact', routes.contact);
 app.get('/information', routes.information);
 app.get('/success', routes.success);
+app.get('/failure', routes.failure);
 app.post('/email', emailer.email);
 
 app.listen(app.get('port'), function() {
