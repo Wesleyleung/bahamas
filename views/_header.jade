@@ -11,5 +11,8 @@ header.bar-title
     a(href=title_link)= title
 
   //Right button
-  - if (title !== 'Info' && title !== 'Success')
-    a.button(href=right_link)= right_title
+  - if (title == 'About' || title == 'Contact' )
+    a.button#right_button(href=right_link)= right_title
+
+
+ 
