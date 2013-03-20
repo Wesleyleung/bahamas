@@ -13,7 +13,7 @@ block main
             input#upload_input(type="file", style="visibility:hidden", accept="image/*", onchange="showPreview(this)")
 
 
-            input#building(type="text", placeholder="Building")
-            input#additional(type="text", placeholder="Floor, room number, etc.")
-            textarea#description(rows="5", placeholder="Descripition")
-            input(type="submit", value="Submit")
+            input#building(type="text", placeholder="Building", name="building")
+            input#additional(type="text", placeholder="Floor, room number, etc.", name="additional")
+            textarea#description(rows="5", placeholder="Descripition", name="description")
+            input(type='submit',value='Submit',data-transition='fade', data-theme='c')
