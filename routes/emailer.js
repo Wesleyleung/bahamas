@@ -1,6 +1,6 @@
 var SendGrid = require('sendgrid').SendGrid;
 var Email = require('sendgrid').Email;
-var bahamasfixit_email_address = "bahamasfixit@gmail.com";
+var bahamasfixit_email_address = "stanfordfixit@gmail.com";
 
 
 //Test function. Fields should be extracted from form.
@@ -14,7 +14,7 @@ exports.email = function(req, res) {
 		user = process.env.SENDGRID_USERNAME;
 	}
 	if(!process.env.SENDGRID_PASSWORD) {
-		key = "";
+		key = "ztacpmnd";
 	} else {
 		key = process.env.SENDGRID_PASSWORD;
 	}
