@@ -1,0 +1,562 @@
+Escondido Village, Unit 1
+(37.4236238, -122.1572418)
+Escondido Village, Unit 2
+(37.4238006, -122.1571531)
+Escondido Village, Unit 3
+(37.4241062, -122.156887)
+Escondido Village, Unit 4
+(37.4242964, -122.1567539)
+Escondido Village, Unit 5
+(37.4247279, -122.1564434)
+Escondido Village, Unit 6
+(37.4249181, -122.1563104)
+Escondido Village, Unit 7
+(37.4247693, -122.1556894)
+Escondido Village, Unit 8
+(37.424408, -122.1556451)
+Escondido Village, Unit 9
+(37.4242552, -122.1557781)
+Escondido Village, Unit 10
+(37.42377, -122.156266)
+Escondido Village, Unit 11
+(37.4235422, -122.1563991)
+Escondido Village, Unit 12
+(37.4234505, -122.1560221)
+Escondido Village, Unit 13
+(37.4236346, -122.1556007)
+Escondido Village, Unit 14
+(37.4238383, -122.1554233)
+Escondido Village, Unit 15
+(37.4242668, -122.1552459)
+Escondido Village, Unit 16
+(37.4244436, -122.1551572)
+Escondido Village, Unit 17
+(37.4243323, -122.1545362)
+Escondido Village, Unit 18
+(37.4240728, -122.1544031)
+Escondido Village, Unit 19
+(37.4239095, -122.1544475)
+Escondido Village, Unit 20
+(37.4234915, -122.1547136)
+Escondido Village, Unit 21
+(37.4233387, -122.1548467)
+Escondido Village, Unit 22
+(37.4225758, -122.154891)
+Escondido Village, Unit 23
+(37.422718, -122.1546693)
+Escondido Village, Unit 24
+(37.4229112, -122.1544031)
+Escondido Village, Unit 25
+(37.423112, -122.1543588)
+Escondido Village, Unit 26
+(37.4233667, -122.154137)
+Escondido Village, Unit 27
+(37.4235329, -122.1539596)
+Escondido Village, Unit 28
+(37.4237712, -122.1539152)
+Escondido Village, Unit 29
+(37.4239403, -122.1536047)
+Escondido Village, Unit 30
+(37.424071, -122.1539152)
+Escondido Village, Unit 31
+(37.4245465, -122.1544475)
+Escondido Village, Unit 32
+(37.4246954, -122.1550685)
+Escondido Village, Unit 33
+(37.4249231, -122.1549354)
+Escondido Village, Unit 34
+(37.4251873, -122.1554233)
+Escondido Village, Unit 35
+(37.4253401, -122.1552902)
+Escondido Village, Unit 36
+(37.4255198, -122.1550685)
+Escondido Village, Unit 38
+(37.424807, -122.1539596)
+Escondido Village, Unit 39
+(37.4250212, -122.1538709)
+Escondido Village, Unit 40
+(37.4243823, -122.153383)
+Escondido Village, Unit 41
+(37.4245006, -122.1531168)
+Escondido Village, Unit 42
+(37.4247658, -122.1529838)
+Escondido Village, Unit 49
+(37.4258649, -122.1535604)
+Escondido Village, Unit 50
+(37.4257976, -122.1537822)
+Escondido Village, Unit 52
+(37.4262088, -122.1544031)
+Escondido Village, Unit 53
+(37.4264605, -122.1543144)
+Escondido Village, Unit 54
+(37.4266267, -122.154137)
+Escondido Village, Unit 55
+(37.4268931, -122.1534454)
+Escondido Village, Unit 56
+(37.42659700000001, -122.1534239)
+Escondido Village, Unit 57
+(37.4263857, -122.1529257)
+Escondido Village, Unit 58
+(37.4265672, -122.1524691)
+Escondido Village, Unit 59
+(37.4262384, -122.1524448)
+Escondido Village, Unit 60
+(37.4259833, -122.1519111)
+Escondido Village, Unit 61
+(37.4260851, -122.1515234)
+Escondido Village, Unit 62
+(37.4265018, -122.1513591)
+Escondido Village, Unit 64
+(37.4272757, -122.1516094)
+Escondido Village, Unit 65
+(37.4271745, -122.1510942)
+Escondido Village, Unit 66
+(37.4271534, -122.1507092)
+Escondido Village, Unit 67
+(37.4274212, -122.1506561)
+Escondido Village, Unit 68
+(37.4277801, -122.1510764)
+Escondido Village, Unit 69
+(37.4277864, -122.1516739)
+Escondido Village, Unit 70
+(37.4282111, -122.1514206)
+Escondido Village, Unit 71
+(37.428431, -122.1519014)
+Escondido Village, Unit 72
+(37.4282372, -122.1522158)
+Escondido Village, Unit 73
+(37.4278293, -122.152333)
+Escondido Village, Unit 75
+(37.427779, -122.1532057)
+Escondido Village, Unit 76
+(37.4283016, -122.1529394)
+Escondido Village, Unit 77
+(37.4286787, -122.1524879)
+Escondido Village, Unit 78
+(37.4290642, -122.1523536)
+Escondido Village, Unit 79
+(37.4292603, -122.1528679)
+Escondido Village, Unit 80
+(37.4288818, -122.1532499)
+Escondido Village, Unit 81
+(37.4290761, -122.1534929)
+Escondido Village, Unit 82
+(37.4292667, -122.154024)
+Escondido Village, Unit 83
+(37.4291187, -122.1543284)
+Escondido Village, Unit 84
+(37.4287029, -122.1545806)
+Escondido Village, Unit 85
+(37.4285887, -122.1540926)
+Escondido Village, Unit 86
+(37.4283485, -122.1536491)
+Escondido Village, Unit 88
+(37.4279655, -122.1544086)
+Escondido Village, Unit 89
+(37.4282835, -122.1547516)
+Escondido Village, Unit 90
+(37.42836399999999, -122.1552535)
+Escondido Village, Unit 91
+(37.428105, -122.15549)
+Escondido Village, Unit 92
+(37.4278324, -122.1552508)
+Escondido Village, Unit 93
+(37.4276834, -122.1547777)
+Escondido Village, Unit 94
+(37.4273434, -122.1544918)
+Escondido Village, Unit 95
+(37.4268596, -122.154803)
+Escondido Village, Unit 96
+(37.427195, -122.1551595)
+Escondido Village, Unit 97
+(37.4276702, -122.1558924)
+Escondido Village, Unit 98
+(37.4275907, -122.1562692)
+Escondido Village, Unit 99
+(37.4271977, -122.1565569)
+Escondido Village, Unit 100
+(37.4270394, -122.1562832)
+Escondido Village, Unit 101
+(37.4269602, -122.1557543)
+Escondido Village, Unit 103
+(37.4263473, -122.1559678)
+Escondido Village, Unit 104
+(37.4266567, -122.1566235)
+Escondido Village, Unit 105
+(37.4268372, -122.1569158)
+Escondido Village, Unit 106
+(37.4270089, -122.1573146)
+Escondido Village, Unit 107
+(37.4265809, -122.1576373)
+Escondido Village, Unit 108
+(37.4262602, -122.1571727)
+Escondido Village, Unit 110
+(37.4255823, -122.1570165)
+Escondido Village, Unit 111
+(37.4259553, -122.157885)
+Escondido Village, Unit 112
+(37.4256709, -122.1581604)
+Escondido Village, Unit 113
+(37.425373, -122.1581385)
+Escondido Village, Unit 114
+(37.4251247, -122.1576231)
+Escondido Village, Unit 115
+(37.4252522, -122.1572784)
+Escondido Village, Unit 116
+(37.4247611, -122.1580405)
+Escondido Village, Unit 117
+(37.42494629999999, -122.1583919)
+Escondido Village, Unit 118
+(37.4253381, -122.158664)
+Escondido Village, Unit 120
+(37.4253461, -122.1590898)
+Escondido Village, Unit 121
+(37.4250402, -122.1593128)
+Escondido Village, Unit 122
+(37.4247369, -122.1595848)
+Escondido Village, Unit 123
+(37.4245947, -122.1590627)
+Escondido Village, Unit 124
+(37.424588, -122.1586437)
+Escondido Village, Unit 125
+(37.4243894, -122.1581655)
+Escondido Village, Unit 127
+(37.4232983, -122.1587412)
+Escondido Village, Unit 128
+(37.4231635, -122.1585633)
+Escondido Village, Unit 129
+(37.4230297, -122.1583089)
+Escondido Village, Unit 130
+(37.4232022, -122.158076)
+Escondido Village, Unit 131
+(37.4230745, -122.1579461)
+Escondido Village, Unit 132
+(37.422973, -122.1581035)
+Escondido Village, Unit 133
+(37.4227159, -122.1582154)
+Escondido Village, Unit 134
+(37.42269880000001, -122.1580372)
+Escondido Village, Unit 135
+(37.4226038, -122.1583899)
+Escondido Village, Unit 136
+(37.4225466, -122.1585582)
+Escondido Village, Unit 137
+(37.4223208, -122.1587017)
+Escondido Village, Unit 138
+(37.4221308, -122.1585087)
+Escondido Village, Unit 139
+(37.4219853, -122.1585825)
+Escondido Village, Unit 140
+(37.4220106, -122.158776)
+Escondido Village, Unit 141
+(37.4226257, -122.1589757)
+Escondido Village, Unit 142
+(37.422722, -122.1593925)
+Escondido Village, Unit 143
+(37.4226173, -122.1595657)
+Escondido Village, Unit 144
+(37.4224988, -122.1594238)
+Escondido Village, Pepper Tree House
+(37.4225296, -122.1552902)
+Escondido Village, Studio 3
+(37.4256417, -122.1547158)
+Escondido Village, Studio 4
+(37.42593919999999, -122.1545552)
+Escondido Village, Studio 5
+(37.4250881, -122.1530946)
+Escondido Village, Studio 5 Commons
+(37.4253283, -122.1535382)
+Escondido Village, Studio 6
+(37.4253668, -122.1529172)
+Escondido Village, Studio 6 Commons
+(37.4254287, -122.153516)
+670 Lomita
+(37.4214119, -122.172137)
+672 Lomita
+(37.4214066, -122.1721215)
+680 Lomita
+(37.4205443, -122.1710219)
+717 Dolores
+(37.418154, -122.165936)
+Arrillaga Alumni Center
+(37.43100099999999, -122.1646778)
+BOB (Robert Moore South)
+(37.4214926, -122.1688815)
+Chi Theta Chi
+(37.4222343, -122.165957)
+Columbae
+(37.4230813, -122.1687395)
+Crothers Hall
+(37.4255702, -122.1653361)
+Crothers Memorial
+(37.4258807, -122.1647144)
+Crothers, Mark Taper Center
+(37.4255653, -122.165307)
+Delta Delta Delta
+(37.4220133, -122.1616029)
+Durand
+(37.4188888, -122.1658683)
+Enchanted Broccoli Forest
+(37.4197981, -122.1740944)
+Encina Commons
+(37.4267924, -122.1648417)
+Florence Moore, Alondra
+(37.4135757, -122.1689284)
+Florence Moore, Cardenal
+(43.0383799, -88.087762)
+Florence Moore, Dining
+(37.4135757, -122.1689284)
+Florence Moore, Faisan
+(37.4135757, -122.1689284)
+Florence Moore, Gavilan
+(37.4135757, -122.1689284)
+Florence Moore, Loro
+(37.4135757, -122.1689284)
+Florence Moore, Mirlo
+(37.4135757, -122.1689284)
+Florence Moore, Paloma
+(37.4135757, -122.1689284)
+Galvez Modular
+(37.4259216, -122.1664005)
+Governor's Corner, Adams
+(37.4260308, -122.1797622)
+Governor's Corner, Anderson
+(37.4247815, -122.1793859)
+Governor's Corner, Avanti Dining
+(37.424629, -122.1808653)
+Governor's Corner, Beefeaters Dining
+(37.4248568, -122.1808137)
+Governor's Corner, Bollard Dining
+(37.4249406, -122.1805943)
+Governor's Corner, EAST (Treat)
+(37.4256959, -122.1785353)
+Governor's Corner, Elliott Program Center
+(37.4135757, -122.1689284)
+Governor's Corner, Griffin
+(37.4243681, -122.1793613)
+Governor's Corner, Guest Cottages A-D
+(37.4245936, -122.1777499)
+Governor's Corner, Guest Cottages E-F
+(37.4246604, -122.1778753)
+Governor's Corner, Jenkins
+(37.4244438, -122.1798852)
+Governor's Corner, Marx
+(37.424853, -122.1799477)
+Governor's Corner, Middle Earth Dining
+(37.4135757, -122.1689284)
+Governor's Corner, Murray
+(37.4251539, -122.1784131)
+Governor's Corner, Potter
+(37.4256715, -122.1798125)
+Governor's Corner, Ricker Dining
+(37.4255527, -122.1805269)
+Governor's Corner, Robinson
+(37.4258529, -122.1806868)
+Governor's Corner, Schiff
+(37.4262595, -122.1805215)
+Governor's Corner, Yost
+(37.42479429999999, -122.1784164)
+Graduate Community Center
+(37.4294599, -122.167254)
+Grove
+(37.4203891, -122.1680858)
+Hammarskjold
+(37.4216479, -122.1653583)
+Hammarskjold Computer Cluster
+(37.4135757, -122.1689284)
+Hammarskjold Storage Bldg
+(37.4135757, -122.1689284)
+Harold Modular
+(37.4272298, -122.1636951)
+Haus Mitteleuropa
+(37.4193628, -122.166467)
+Housing Maintenance Center
+(37.4233884, -122.1571531)
+Housing Maintenance Center Annex
+(37.4237846, -122.157885)
+Jerry
+(37.4211033, -122.1737027)
+Kairos
+(37.4201745, -122.1676201)
+Kappa Alpha
+(37.4204634, -122.174014)
+Kappa Alpha Theta
+(37.4209271, -122.1624995)
+Kappa Sigma
+(37.4203376, -122.1703739)
+La Casa Italiana (Robert Moore North)
+(37.421888, -122.1691545)
+La Maison Francaise
+(37.419615, -122.1669327)
+Lagunita, Adelfa
+(37.4254115, -122.1764249)
+Lagunita, Administration
+(37.4254204, -122.1761349)
+Lagunita, Eucalipto
+(37.4250739, -122.1768063)
+Lagunita, Granada
+(37.4249326, -122.1773361)
+Lagunita, Lakeside Dining
+(37.4247148, -122.1763572)
+Lagunita, Naranja
+(37.4253036, -122.1758579)
+Lagunita, Ujamaa A
+(37.4248206, -122.1757597)
+Lagunita, Ujamaa B
+(37.4245329, -122.1754447)
+Lasuen
+(37.4210563, -122.1684184)
+Lyman, Bldg 1
+(37.4258053, -122.181527)
+Lyman, Bldg 3
+(37.4247695, -122.1816355)
+Lyman, Commons
+(37.4251627, -122.1816749)
+Manzanita, Castano
+(37.4135757, -122.1689284)
+Manzanita, Dining
+(37.4255859, -122.1619474)
+Manzanita, Lantana
+(37.4135757, -122.1689284)
+Maples Pavilion
+(37.4295873, -122.1605388)
+Mars
+(37.4226924, -122.1686033)
+Mirrielees House
+(37.4233379, -122.1598281)
+Munger, Bldg 1
+(37.4231595, -122.1656068)
+Munger, Bldg 2
+(37.422916, -122.166324)
+Munger, Bldg 3
+(37.4235505, -122.1663118)
+Munger, Bldg 4
+(37.42310519999999, -122.1669323)
+Munger, Jacobson-Sorensen Hall
+(37.4135757, -122.1689284)
+Muwekma-Tah-Ruk
+(37.423436, -122.169004)
+Narnia
+(37.4200394, -122.1750461)
+Phi Kappa Psi
+(37.4199839, -122.1673012)
+Phi Sig
+(37.4204946, -122.1689728)
+Pi Beta Phi
+(37.4218527, -122.1623887)
+Roble Garage
+(37.4135757, -122.1689284)
+Roble Hall
+(37.4242435, -122.1745766)
+Roth
+(37.4191595, -122.1671988)
+Schwab Res Ctr, Bldg B
+(37.4135757, -122.1689284)
+Schwab Res Ctr, Cemex Bldg
+(37.4135757, -122.1689284)
+Schwab Res Ctr, Spence Bldg
+(37.4135757, -122.1689284)
+Schwab Res Ctr, Tower Bldg
+(37.4135757, -122.1689284)
+Schwab Res Ctr, Vidalakis Dining
+(37.4135757, -122.1689284)
+Sigma Alpha Epsilon
+(37.4199473, -122.1708487)
+Sigma Nu
+(37.4222852, -122.168378)
+SLAC Bldg 041
+(37.4135757, -122.1689284)
+Slavianskii Dom
+(37.4185512, -122.1653139)
+Stanford Guest House
+(37.4245936, -122.1777499)
+Stern, Burbank
+(37.4135757, -122.1689284)
+Stern, Casa Zapata
+(37.4244753, -122.1656649)
+Stern, Dining
+(37.4135757, -122.1689284)
+Stern, Donner
+(37.4135757, -122.1689284)
+Stern, Larkin North
+(37.4244753, -122.1656649)
+Stern, Larkin West
+(37.4244753, -122.1656649)
+Stern, Twain East
+(37.4244753, -122.1656649)
+Stern, Twain North
+(37.4244753, -122.1656649)
+Storey
+(37.423231, -122.169725)
+Student Housing Mgmt Office
+(37.42103150000001, -122.1632689)
+Sunken Diamond Concession
+(37.4135757, -122.1689284)
+Synergy
+(37.4193974, -122.1688841)
+Terra
+(37.421414, -122.1629911)
+Theta Delta Chi
+(37.4209582, -122.170044)
+Toyon Hall
+(37.4260274, -122.1634602)
+Toyonito
+(37.4268447, -122.1629319)
+Wilbur, Administration
+(37.4135757, -122.1689284)
+Wilbur, Cedro
+(37.4135757, -122.1689284)
+Wilbur, Dining
+(37.4135757, -122.1689284)
+Wilbur, Junipero
+(37.4135757, -122.1689284)
+Wilbur, Okada
+(37.4135757, -122.1689284)
+Wilbur, Otero
+(37.4135757, -122.1689284)
+Wilbur, Soto
+(37.4135757, -122.1689284)
+Wilbur, Trancos
+(37.4135757, -122.1689284)
+Xanadu
+(37.4221844, -122.1692918)
+ZAP
+(37.4214444, -122.1618647)
+Stern, Serra
+(37.424113,-122.166183)
+Wilbur, Arroyo
+(37.42453,-122.162477)
+Wilbur, Rinconada
+(37.423876,-122.164062)
+Escondido Village, Studio 1
+(37.423603,-122.159152)
+Escondido Village, Studio 2
+(37.427214,-122.154237)
+Florence Moore, Administration
+(37.4223846, -122.1715511)
+Manzanita, Kimball
+(37.425123,-122.161827)
+Manzanita, Lantana/Castano Commons
+(37.425434,-122.160754)
+Escondido Village, Abrams
+(37.426876,-122.151923)
+Escondido Village, Barnes
+(37.427563,-122.152608)
+Escondido Village, Blackwelder
+(37.42446,-122.157567)
+Escondido Village Center
+(37.422927, -122.1553525)
+Escondido Village, Hoskins
+(37.426667,-122.155381)
+Escondido Village, Hulme
+(37.427858,-122.153989)
+Escondido Village, McFarland
+(37.426073,-122.156463)
+Escondido Village, Quillen
+(37.425919,-122.158884)
+Escondite Cottage
+(37.4228246, -122.1561659)
+Branner, Dining
+(37.425769,-122.162768)
+Branner Hall
+(37.4254247, -122.1628524)

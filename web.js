@@ -49,3 +49,20 @@ app.post('/email', emailer.email);
 app.listen(app.get('port'), function() {
   console.log("Express server listening on port %d in %s mode", app.get('port'), app.settings.env);
 });
+
+
+var mongo = require('mongodb');
+
+var mongoUri = 'mongodb://localhost/dormLocationDB';
+  //process.env.MONGOLAB_URI || 
+  //process.env.MONGOHQ_URL || 
+  //'mongodb://localhost/dormLocationDB'; 
+
+mongo.Db.connect(mongoUri, function (err, db) {
+  db.collection('mydocs', function(er, collection) {
+    collection.insert({'mykey': 'myvalue'}, {safe: true}, function(er,rs) {
+    });
+  });
+});
+
+console.log('hello');
