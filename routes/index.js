@@ -4,8 +4,7 @@
  */
 exports.index = function(req, res) {
   res.render('index', { title: 'Stanford Fixit',  title_link: '/',
-                        left_title: 'Info',      left_link: '/information',
-                        right_title: 'Submit',    right_link: '/'})
+                        left_title: 'Info',      left_link: '/information'})
 };
 
 exports.information = function(req, res) {
