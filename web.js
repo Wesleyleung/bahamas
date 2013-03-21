@@ -6,7 +6,8 @@
 var express = require('express')
   , routes  = require('./routes')
   , emailer = require('./routes/emailer')
-  , path    = require('path');
+  , path    = require('path')
+  , location_results = require('./routes/location_results');
 
 var app = express();
 
@@ -50,6 +51,34 @@ app.configure('production', function() {
   app.use(express.errorHandler());
 });
 
+//var mongoUri = 'mongodb://localhost/dormLocationDB';
+  //process.env.MONGOLAB_URI || 
+  //process.env.MONGOHQ_URL || 
+  //'mongodb://localhost/dormLocationDB'; 
+
+//mongo.Db.connect(mongoUri, function (err, db) {
+  //var locations = db.locations.find();
+  /*console.log('herrow');
+  var numLocations = db.locations.count();
+  var locations = db.locations.find();
+  var minDistance = -1;
+  var index = -1;
+
+  for (var i = 0; i < numLocations; i++) {
+    var locLat = locations[i].lat;
+    var locLng = locations[i].lng;
+    var distance = pow((testLocation.lat - lat),2) + pow((testLocation.lng - lng),2);
+    if (minDistance > 0 && distance < minDistance) {
+      minDistance = distance;
+      index = i;
+    }
+  }
+  $('#building').attr('value', locations[index].name);*/
+  //db.collection('locations', function(err2, collection) {
+    //collection.find();
+  //});
+//});
+
 // Routes
 
 app.get('/', routes.index);
@@ -59,7 +88,9 @@ app.get('/information', routes.information);
 app.get('/success', routes.success);
 app.get('/failure', routes.failure);
 app.post('/email', emailer.email);
+app.get('/location_results', location_results.fetchLocations);
 
 app.listen(app.get('port'), function() {
   console.log("Express server listening on port %d in %s mode", app.get('port'), app.settings.env);
 });
+
