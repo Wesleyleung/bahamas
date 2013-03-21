@@ -14,5 +14,5 @@ exports.fetchLocations = function(req, res) {
 			console.log(result);
 			res.send(result);
 		});
-
+	});
 };
