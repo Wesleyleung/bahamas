@@ -7,9 +7,6 @@ function showPreview(input) {
 	    var reader = new FileReader();
 		reader.onload = function(e) {
 			$('#pic').attr('src', e.target.result);
-
-			//document.getElementById('hiddenPreview').style.display="block";
-			//document.getElementById('hidden').style.display="none";
 		}
 		reader.readAsDataURL(input.files[0]);
 
@@ -17,11 +14,6 @@ function showPreview(input) {
 			var lat = position.coords.latitude;
 			var lng = position.coords.longitude;
 			loadLocations(lat, lng);
-			
-
-			
-			//$('#building').attr('value', lat);
-			//document.getElementById('photo_lng').value = lng;
 		}
 
 		function error(msg) {
@@ -47,15 +39,14 @@ function loadLocations(lat, lng) {
 			for (var i = 0; i < data.length; i++) {
 				var locLat = data[i].lat;
 				var locLng = data[i].lng;
-				var distance = ((locLat - lat)*(locLat - lat)) + ((locLng - lng)*(locLng - lng));
-
-				if (minDistance > 0 && distance < minDistance) {
+				var distance = (locLat - lat)*(locLat - lat) + (locLng - lng)*(locLng - lng);
+				if (minDistance < 0 || distance < minDistance) {
 					minDistance = distance;
 					index = i;
 				}
 			}
-			console.log(data[0].name + 'hello');
-			$('#building').attr('value', data[0].name);
+			//console.log(data[0].name + 'hello');
+			$('#building').attr('value', data[index].name);
 		},
 		failure: function(error) {
 			console.log('gross');
