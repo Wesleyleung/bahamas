@@ -6,7 +6,8 @@
 var express = require('express')
   , routes  = require('./routes')
   , emailer = require('./routes/emailer')
-  , path    = require('path');
+  , path    = require('path')
+  , location_results = require('./routes/location_results');
 
 var app = express();
 
@@ -35,14 +36,6 @@ app.configure('development', function() {
 
 app.configure('production', function() {
   app.use(express.errorHandler());
-});
-
-var db = require('mongoskin').db('localhost/dormLocationDB');
-
-db.collection('locations').find({}, function(err, result) {
-  result.each(function(err, location) {
-    console.log(location);
-  })
 });
 
 //var mongoUri = 'mongodb://localhost/dormLocationDB';
@@ -81,6 +74,7 @@ app.get('/contact', routes.contact);
 app.get('/information', routes.information);
 app.get('/success', routes.success);
 app.post('/email', emailer.email);
+app.get('/location_results', location_results.fetchLocations);
 
 app.listen(app.get('port'), function() {
   console.log("Express server listening on port %d in %s mode", app.get('port'), app.settings.env);

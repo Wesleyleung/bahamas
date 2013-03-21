@@ -13,42 +13,39 @@ function showPreview(input) {
 		}
 		reader.readAsDataURL(input.files[0]);
 
+		function loadLocations(lat, lng) {
+			$.ajax({
+				url: '/location_results',
+				success: function(locations) {
+					var minDistance = -1;
+					var index = -1;
+
+					for (var i = 0; i < locations.length; i++) {
+						var locLat = locations[i].lat;
+						var locLng = locations[i].lng;
+						var distance = pow((locLat - lat),2) + pow((locLng - lng),2);
+						if (minDistance > 0 && distance < minDistance) {
+							minDistance = distance;
+							index = i;
+						}
+					}
+					console.log(locations[0] + 'hello');
+					$('#building').attr('value', locations[index]);
+				},
+				failure: function() {
+					console.log('gross');
+				},
+				dataType: 'jsonp'
+			});
+		}
+
 		function success(position) {
 			var lat = position.coords.latitude;
 			var lng = position.coords.longitude;
+			loadLocations(lat, lng);
+			
 
-			var mongo = require('mongodb');
-
-			var mongoUri = 'mongodb://localhost/dormLocationDB';
-				//process.env.MONGOLAB_URI || 
-				//process.env.MONGOHQ_URL || 
-				//'mongodb://localhost/dormLocationDB'; 
-
-			mongo.Db.connect(mongoUri, function (err, db) {
-				console.log('herrow');
-				var numLocations = db.locations.count();
-				var locations = db.locations.find();
-				var minDistance = -1;
-				var index = -1;
-
-				for (var i = 0; i < numLocations; i++) {
-					var locLat = locations[i].lat;
-					var locLng = locations[i].lng;
-					var distance = pow((testLocation.lat - lat),2) + pow((testLocation.lng - lng),2);
-					if (minDistance > 0 && distance < minDistance) {
-						minDistance = distance;
-						index = i;
-					}
-				}
-				$('#building').attr('value', locations[index].name);
-				/*db.collection('locations', function(er, collection) {
-					collection.insert({'mykey': 'myvalue'}, {safe: true}, function(er,rs) {
-					});
-				});*/
-			});
-
-
-
+			
 			//$('#building').attr('value', lat);
 			//document.getElementById('photo_lng').value = lng;
 		}
