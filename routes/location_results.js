@@ -1,9 +1,7 @@
 var mongo = require('mongodb');
 
 
-
 exports.fetchLocations = function(req, res) {
-
 
     var mongoUri = process.env.MONGOLAB_URI || 
   		process.env.MONGOHQ_URL || 
@@ -16,5 +14,5 @@ exports.fetchLocations = function(req, res) {
 			console.log(result);
 			res.send(result);
 		});
-	});
+
 };
