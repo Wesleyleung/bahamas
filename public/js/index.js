@@ -13,32 +13,6 @@ function showPreview(input) {
 		}
 		reader.readAsDataURL(input.files[0]);
 
-		function loadLocations(lat, lng) {
-			$.ajax({
-				url: '/location_results',
-				success: function(locations) {
-					var minDistance = -1;
-					var index = -1;
-
-					for (var i = 0; i < locations.length; i++) {
-						var locLat = locations[i].lat;
-						var locLng = locations[i].lng;
-						var distance = pow((locLat - lat),2) + pow((locLng - lng),2);
-						if (minDistance > 0 && distance < minDistance) {
-							minDistance = distance;
-							index = i;
-						}
-					}
-					console.log(locations[0] + 'hello');
-					$('#building').attr('value', locations[index]);
-				},
-				failure: function() {
-					console.log('gross');
-				},
-				dataType: 'jsonp'
-			});
-		}
-
 		function success(position) {
 			var lat = position.coords.latitude;
 			var lng = position.coords.longitude;
@@ -63,6 +37,33 @@ function showPreview(input) {
 	}
 }
 
+function loadLocations(lat, lng) {
+	$.ajax({
+		url: '/location_results',
+		success: function(data) {
+			var minDistance = -1;
+			var index = -1;
+
+			for (var i = 0; i < data.length; i++) {
+				var locLat = data[i].lat;
+				var locLng = data[i].lng;
+				var distance = ((locLat - lat)*(locLat - lat)) + ((locLng - lng)*(locLng - lng));
+
+				if (minDistance > 0 && distance < minDistance) {
+					minDistance = distance;
+					index = i;
+				}
+			}
+			console.log(data[0].name + 'hello');
+			$('#building').attr('value', data[0].name);
+		},
+		failure: function(error) {
+			console.log('gross');
+			console.log(error);
+		},
+		dataType: 'json'
+	});
+}
 
 
 function validateForm() {
