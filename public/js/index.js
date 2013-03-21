@@ -40,7 +40,7 @@ function loadLocations(lat, lng) {
 			locations = data;
 			var select = document.getElementById('building');
 			for (i = 0; i < locations.length; i++) {
-    			select.options[select.options.length] = new Option(locations[i].name, i);
+    			select.options[select.options.length] = new Option(locations[i].name, locations[i].name);
 			}
 
 			var minDistance = -1;
@@ -56,19 +56,8 @@ function loadLocations(lat, lng) {
 				}
 			}
 			select.options[index].selected = true;
-
-			//$('#building').attr('value', locations[index].name);
-
-
-
-
-
-
-
-
 		},
 		failure: function(error) {
-			console.log('gross');
 			console.log(error);
 		},
 		dataType: 'json'
@@ -80,7 +69,6 @@ function validateForm() {
 	var building = $('#building').val();
 	var additional = $('#additional').val();
 	var description = $('#description').val();
-	console.log(building);
 	if(!building) {
 		$('#building').focus();
 		return false;
