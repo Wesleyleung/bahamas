@@ -32,3 +32,24 @@ function showPreview(input) {
 		}
 	}
 }
+
+
+
+function validateForm() {
+	var building = $('#building').val();
+	var additional = $('#additional').val();
+	var description = $('#description').val();
+	console.log(building);
+	if(!building) {
+		$('#building').focus();
+		return false;
+	}
+	if(!additional) {
+		$('#additional').focus();
+		return false;
+	}
+	if(!description) {
+		$('#description').focus();
+		return false;
+	}
+}

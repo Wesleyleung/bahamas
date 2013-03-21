@@ -7,7 +7,7 @@ var bahamasfixit_email_address = "stanfordfixit@gmail.com";
 exports.email = function(req, res) {
 	var user;
 	var key;
-	
+
 	if(!process.env.SENDGRID_USERNAME) {
 		user = "app12301695@heroku.com";
 	} else {
@@ -34,9 +34,11 @@ exports.email = function(req, res) {
 	sendgrid.send(email, function(success, message) {
 		if(!success) {
 			console.log(message);
+			res.render('failure', { title: 'Failure', title_link: '/failure',
+                          left_title: 'Home', left_link: "/"})
 		} 
 		console.log(success);
-	});
-	res.render('success', { title: 'Success', title_link: '/success',
+		res.render('success', { title: 'Success', title_link: '/success',
                           left_title: 'Home', left_link: "/"})
+	});
 }
