@@ -16,7 +16,40 @@ function showPreview(input) {
 		function success(position) {
 			var lat = position.coords.latitude;
 			var lng = position.coords.longitude;
-			$('#building').attr('value', lat);
+
+			var mongo = require('mongodb');
+
+			var mongoUri = 'mongodb://localhost/dormLocationDB';
+				//process.env.MONGOLAB_URI || 
+				//process.env.MONGOHQ_URL || 
+				//'mongodb://localhost/dormLocationDB'; 
+
+			mongo.Db.connect(mongoUri, function (err, db) {
+				console.log('herrow');
+				var numLocations = db.locations.count();
+				var locations = db.locations.find();
+				var minDistance = -1;
+				var index = -1;
+
+				for (var i = 0; i < numLocations; i++) {
+					var locLat = locations[i].lat;
+					var locLng = locations[i].lng;
+					var distance = pow((testLocation.lat - lat),2) + pow((testLocation.lng - lng),2);
+					if (minDistance > 0 && distance < minDistance) {
+						minDistance = distance;
+						index = i;
+					}
+				}
+				$('#building').attr('value', locations[index].name);
+				/*db.collection('locations', function(er, collection) {
+					collection.insert({'mykey': 'myvalue'}, {safe: true}, function(er,rs) {
+					});
+				});*/
+			});
+
+
+
+			//$('#building').attr('value', lat);
 			//document.getElementById('photo_lng').value = lng;
 		}
 
