@@ -2,10 +2,9 @@ var mongo = require('mongodb');
 
 
 exports.fetchLocations = function(req, res) {
-
     var mongoUri = process.env.MONGOLAB_URI || 
   		process.env.MONGOHQ_URL || 
-  		'localhost/dormLocationDB'; 
+  		'localhost/dormLocationDB';
 
   	console.log(process.env.MONGOLAB_URI);
 

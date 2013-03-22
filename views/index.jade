@@ -3,7 +3,6 @@ extends layout
 block head
     link(rel='stylesheet', href='/stylesheets/index.css')
 
-
 block main
 
     .content-padded
@@ -11,6 +10,8 @@ block main
             img#pic(src="/img/tap.png", onclick="picClickFunction()", name="pic")
             input#upload_input(type="file", style="visibility:hidden", accept="image/*", onchange="showPreview(this)", name="uploaded_input")
             select#building(name="building")
+                -each location in locations
+                  option #{location.name}
             input#additional(type="text", placeholder="Floor, room number, etc.", name="additional")
             textarea#description(rows="5", placeholder="Descripition", name="description")
             input#submitButton(class='button', type='submit',value='Submit', data-transition='fade', data-theme='c')
