@@ -10,7 +10,7 @@ exports.fetchLocations = function(req, res) {
   	console.log(process.env.MONGOLAB_URI);
 
   	console.log("got mongoURI" + mongoUri);
-  	if(mongoURI) {
+  	if(mongoUri) {
 	  	mongo.Db.connect(mongoUri, function (err, db) {
 			db.collection('locations').find().sort({name:1}).toArray(function(err, result) {
 				if (err) throw err;
