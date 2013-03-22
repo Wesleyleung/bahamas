@@ -9,7 +9,7 @@ exports.fetchLocations = function(req, res) {
 
   	console.log(process.env.MONGOLAB_URI);
 
-  	console.log("got mongoURI" + mongoURI);
+  	console.log("got mongoURI" + mongoUri);
   	if(mongoURI) {
 	  	mongo.Db.connect(mongoUri, function (err, db) {
 			db.collection('locations').find().sort({name:1}).toArray(function(err, result) {
