@@ -2,6 +2,8 @@
 /*
  * GET home page.
  */
+
+
 exports.index = function(req, res) {
   res.render('index', { title: 'Stanford Fixit',  title_link: '/',
                         left_title: 'Info',      left_link: '/information'})
