@@ -2,9 +2,10 @@ var mongo = require('mongodb');
 
 
 exports.fetchLocations = function(req, res) {
-    var mongoUri = process.env.MONGOLAB_URI || 
-  		process.env.MONGOHQ_URL || 
-  		'localhost/dormLocationDB';
+    var mongoUri = process.env.MONGOLAB_URI ||
+  		process.env.MONGOHQ_URL ||
+  		'localhost/dormLocationDB' ||
+      'mongodb://heroku_app12301695:q09lbo3ilv7gq5doqlo12ufgsh@ds037907.mongolab.com:37907/heroku_app12301695';
 
   	console.log(process.env.MONGOLAB_URI);
 
