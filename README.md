@@ -3,6 +3,17 @@ bahamas
 
 cs184
 
+We are building an HTML5 mobile web app that will allow users to capture images and submit Stanford FixIt requests from their mobile device. The application will extract data from the user’s browser location to automatically make inferences for which building the FixIt request is needed. BahamasFixit currently only works on Stanford campus.
+
+After needfinding and interviews, we determined that FixIt employees needed a more efficient way to receive issue requests and get more context about the problem from each request. Currently, Stanford administrators and FixIt employees submit building problems in two ways. The first method is through https://fixit.stanford.edu/, which allows users to list the building name and a textual description of the problem. FixIt employees, however, cannot diagnose the issue remotely nor can they gauge the true nature of the problem without sending an inspector there first. The second method for reporting is through photos and an email request to FixIt. It’s difficult, however, for inspectors to determine where the photo was taken or which building the issue was located in. 
+
+Key Features
+---
+Simple tap to upload or take photo
+Automatically form filling using reverse geocoding. Locations stored serviced from MongoDB
+Simple email with attachment for the Fixit request sent to stanfordfixit@gmail.com
+
+
 To run:
 After cloning, check that you have the following dependencies:
 npm -v
