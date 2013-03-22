@@ -10,6 +10,7 @@ $(document).ready(function() {
 	function success(position) {
 		var lat = position.coords.latitude;
 		var lng = position.coords.longitude;
+		console.log(lat + "lat" + lng + "lng");
 		loadLocations(lat, lng);
 	}
 	function error(msg) {

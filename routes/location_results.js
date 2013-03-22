@@ -7,7 +7,7 @@ exports.fetchLocations = function(req, res) {
   		process.env.MONGOHQ_URL || 
   		'localhost/dormLocationDB'; 
 
-
+  	console.log("got mongoURI" + mongoURI);
   	mongo.Db.connect(mongoUri, function (err, db) {
 		db.collection('locations').find().sort({name:1}).toArray(function(err, result) {
 			if (err) throw err;
