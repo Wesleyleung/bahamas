@@ -2,7 +2,6 @@ extends layout
 
 block head
     link(rel='stylesheet', href='/stylesheets/index.css')
-    script(src='js/index.js')
 
 
 block main
@@ -15,3 +14,5 @@ block main
             input#additional(type="text", placeholder="Floor, room number, etc.", name="additional")
             textarea#description(rows="5", placeholder="Descripition", name="description")
             input#submitButton(class='button', type='submit',value='Submit', data-transition='fade', data-theme='c')
+
+        script(src='js/index.js')
